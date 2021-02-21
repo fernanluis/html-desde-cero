@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.jpg">
+    <title>Truco</title>
+    <style>
+      html{
+        background: brown;
+        color: black;
+      }
+      div{
+        background-color:grey;
+      }
+    </style>
+    <!--<script src="scripts.js"></script>-->
+    <script>
+      let nombre = prompt('Dime tu nombre')
+      alert(`Bienvenido ${nombre}`)
+    </script>
+  </head>
+  <body>
+      <!--etiquetas básicas de HTML: header, main, footer-->
+      <header><strong>HTML desde Cero</strong></header><!--no se trata de cómo se vé sino que solo está organizando el contenido-->
+    <div><!--solo es una caja-->
+        <nav>
+          <em>Sección de nav</em>
+          <small>Secciones</small>
+          <small>Artículos</small>
+          <small>Eventos</small>
+        </nav><br><!--breaking rules-->
+    </div>
+    <div>
+        <aside><!--cualquier información no relacionada-->
+          <em>Aside:</em> Sígueme en las Redes.
+        </aside>
+    </div>
+    <div>
+        <!--elementos de bloque o de línea,  bloque todo el paso posible de manera horizontal.-->
+        <span>Hola</span><hr><!--hr no es poner una línea sino solo indica cambio de tema brusco-->
+        <span>Hola denuevo</span><!--identico a div-->
+    </div>
+    <div>
+        <main>
+          <p><em>Articulos y secciones dentro de un main</em></p>
+          <article>
+            <h2>Bienvenidos a HTML</h2>
+            <p>Este es un sitio a puro HTML</p>
+          </article>
+          <section>
+            <h2>Primera sección</h2>
+            <p>Este es un sitio a puro HTML</p>
+          </section>
+          <section>
+            <h2>Segunda sección</h2>
+            <p>Este es un sitio sssssssssssssssssssssssssssfffffffffffffffffssssss<wbr>sssssssssssffffffffffffffffffffffffffffffffffffffffffffffffffffssssssssssssssssssssffffffffffffffffffffffffffffffffffff a puro HTML</p>
+          </section>
+        </main>
+    </div>
+    <div>
+        <code><!--encierra a pre-->
+            <pre><!--etiqueta de preformateado, respeta los espacios, saltos de línea-->
+                  <p><em>Etiqueta de preformateado en un bloque de code</em></p>
+                          html{
+                            background: brown;
+                            color: white;
+                          }
+
+                        <!--<script src="scripts.js"></script>-->
+
+                          let nombre = prompt('Dime tu nombre')
+                          alert(`Bienvenido ${nombre}`)
+
+            </pre>
+        </code>
+    </div>
+    <div>
+        <blockquote><!--citas con bloquote-->
+          <em>Blockquote:</em> Hola! esta es una cita
+        </blockquote>
+    </div>
+    <div>
+      <footer><em>Footer</em></footer>
+    </div>
+  </body>
+</html>

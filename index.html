@@ -1,0 +1,37 @@
+<!DOCTYPE html><!--El DOCTYPE le indica al navegador ek tipo de documentos-->
+<html lang="es"><!--html es la raíz de todo html y lang es el idioma-->
+  <head><!--se agrega información necesaria para el navegador pero que no se visualiza en el navegador-->
+    <meta charset="utf-8"><!--codificación de caracteres universal-->
+    <meta name="description" content="Bienvenidos a mi página web">
+    <link rel="icon" href="favicon.jpg">  <!--favicon de iconos favoritos-->
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script><!--la etiqueta script conecta con JavaScript-->
+    <title>Bienvenidos a mi página web</title>
+  </head>
+  <body><!--En body se agrega toda la información que el usuario ve-->
+    <h1>Hola Mundo</h1>
+    <!--Elementos de línea -->
+    <!--b u i (bold, underline, italic)-->
+    <p> <u>subrayado</u> <b>negrita</b> <i>cursiva</i> </p>
+    <cite>Cita en línea <sup> superíndice </sup> <sub>subíndice</sub> </cite>
+    <time> 7:15pm </time><br>
+    <!--Enlaces-->
+    <a href="https://argentina.spiraservice.net/Login.aspx" rel="noreference">SpiraTeam</a><!--noreference no indica al destino el origen del link-->
+    <!--atributos opcionales-->
+    <a href="https://argentina.spiraservice.net/Login.aspx" target="_blanck" rel="nofollow">SpiraTeam en otra pestaña</a><!--nofollow no trasnmite SEO-->
+    <a href="https://argentina.spiraservice.net/Login.aspx" rel="noopener">SpiraTeam</a><!--evita la incrustación de código maliciosoal abrir enlaces en nuevas pestañas-->
+    <!--download descarga el recurso en lugar de abrirlo en el navegador, pero para que funciones ése recurso debe estar en tu mismo servidor sino no va a funcionar. No debe estar en modo archivo-->
+    <p>
+      <a href="https://i.pinimg.com/736x/ae/bb/2a/aebb2aba5805a17893f72429b5995ee2.jpg">Imagen de Gokú</a><br>
+      <a href="https://i.pinimg.com/736x/ae/bb/2a/aebb2aba5805a17893f72429b5995ee2.jpg"download>Descarcar imagen</a>
+    </p>
+    <!--Rutas absolutas y relativas
+        1.Rutas absolutas: tiene  el protocolo http o https y son únicas
+        2.Rutas relativas: se usan para rutas externas, o rutas internas del proyecto, por lo tanto no usan protocolo y se debe navegar hacia el destino.
+        3.Ruta relativa a la raíz: se construyen a partir del origen y empiezan siempre con slash (/)
+  -->
+    <p>
+      <a href="/html/marcadores.html">Ir a marcadores</a>
+    </p>
+  </body>
+</html>
