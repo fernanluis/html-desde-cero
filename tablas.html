@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+
+    <!--
+      Atributos  para agrupación de filas y columnas
+      colspan = N
+      rowspan = N
+      colgroup no envuelve una columna
+  -->
+    <table border = 1>
+      <caption>Tabla</caption><!--título, el navegador entiende que el caption es el título de la tabla-->
+      <colgroup>
+        <col span=4>
+        <col style="background:blue">
+      </colgroup>
+      <tbody><!--marcado semántico-->
+        <tr>
+          <thead><!--marcado semántico-->
+            <!--table row, es decir para cada fila-->
+            <th>
+              <!--table head para cada columna-->
+              Lunes
+            </th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>viernes</th>
+          </thead>
+        </tr>
+        <tr>
+          <td colspan= 2 >HTML</td><!--table data para cada celda-->
+        <!--  <td>JS</td>  -->
+          <td>Python</td>
+          <td>JAVA</td>
+          <td>Testing</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>
+            1 cursos
+            <!--se utilizan para conclusiones, y el navegador entiende que es el pie sí o sí-->
+          </td>
+          <td>1 cursos</td>
+          <td>1 cursos</td>
+          <td>1 cursos</td>
+          <td>1 cursos</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

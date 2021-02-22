@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML desde Cero</title>
+  </head>
+  <body>
+    <!--
+        Formato de imágenes
+        1. Venctores:
+              .svg (son códigos, no una imagen, solo ve la imagen hasta que está insertado)
+        2. Mapa de bits
+              .jpg, .jpeg (fotos)
+              .png (para fotos o imágenes detalladas con transparencias)
+              .gif (para aimaciones)
+              .webp (es más liviano que jpg y png y soporta transparencias)
+              https://unsplash.com/
+              https://www.flaticon.com/
+              https://iconscout.com/
+              https://undraw.co/
+              https://www.humaaans.com/
+  -->
+  <!--
+      Concepto importante en imágenes: devicePixeRatio
+      que es la relación entre los pixeles reales que tiene la pantalla frente a los pixeles de viewport
+      o la cantidad de pixeles disponibles que tienes en pantalla para mostrar contenido.
+      1. Pixeles de viewport(pv): pixeles disponiblespara mostrar contenido
+      2. Pixeles reales(pr): pixeles físicos implementados por el fabricante en la pantalla
+      3. devicePixeRatio: pr/pv
+
+      <img src="" alt="">
+      <img srcset="" alt=""
+           src=""
+      > se pueden pasar varias imágenes determinando el devicePixeRatio
+-->
+  <!--Picture, cada elemento source es una imagen y debe tener condiciones con el parámetro 'media', ordendos de mayor a menor
+  <picture>
+      <source srcset="" media="()" >
+      <source srcset="" media="()" >
+      <img src="">
+  </picture>-->
+  <!--Figura
+
+      No es para imagen necesariamente, sin que que representa o puede cortar un cntenido principal
+      y puede contar con una descripción.
+      Es decir,
+      <figure>
+        <figcaption>
+          figcaption se utiliza para mostrar una explicación o una leyenda acerca de ese contenido.
+        </figcaption>
+      </figure>
+-->
+<!--Audio y video
+  <video
+  src=".."
+  width=""
+  controls aquí aparece un play
+  poster="" colocar una imagen al video
+  autoplay reproduce de manera automática pero..los navegadores bloquean el autoplay salvo que el usuario haga una acción previa
+  muted  en caso de reproducirse de manera automática lo hará en silencio
+  >
+</video>    para video formato mp4 y codec h264
+
+  <audio src=""
+  controls
+  >
+  </audio>
+
+-->
+  </body>
+</html>
